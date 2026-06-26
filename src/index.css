@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 43 91% 62%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 43 91% 62%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 43 91% 62%;
+    --radius: 0.5rem;
+
+    --gold: #f6b846;
+    --silver: #c4c4c4;
+    --sage: #90ac78;
+    --slate: #6582a4;
+    --rose: #ce7c7c;
+    --board-dark: #b58863;
+    --board-light: #f0d9b5;
+  }
+
+  body {
+    @apply bg-black text-white;
+    font-family: 'Outfit', sans-serif;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 40px rgba(246, 184, 70, 0.3);
+  }
+
+  .gold-border {
+    border-color: rgba(246, 184, 70, 0.3);
+  }
+
+  .gold-glow {
+    box-shadow: 0 0 20px rgba(246, 184, 70, 0.1);
+  }
+
+  .gold-glow-strong {
+    box-shadow: 0 0 60px rgba(246, 184, 70, 0.15);
+  }
+
+  .board-classic .square-dark {
+    background-color: #b58863;
+  }
+
+  .board-classic .square-light {
+    background-color: #f0d9b5;
+  }
+
+  .board-sage .square-dark {
+    background-color: #90ac78;
+  }
+
+  .board-sage .square-light {
+    background-color: #cdd7c0;
+  }
+
+  .board-slate .square-dark {
+    background-color: #6582a4;
+  }
+
+  .board-slate .square-light {
+    background-color: #b9c6d7;
+  }
+
+  .board-rose .square-dark {
+    background-color: #ce7c7c;
+  }
+
+  .board-rose .square-light {
+    background-color: #e8c8c8;
+  }
+}
